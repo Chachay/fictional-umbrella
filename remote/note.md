@@ -78,3 +78,31 @@ GPU #0:
 
   Number of Display Devices: 0
 ```
+
+
+/etc/X11/xorg.conf
+```
+Section "Monitor"
+    Identifier     "Monitor0"
+    VendorName     "Unknown"
+    ModelName      "Unknown"
+    Option         "DPMS"
+EndSection
+
+Section "Device"
+    Identifier     "Device0"
+    Driver         "nvidia"
+    VendorName     "NVIDIA Corporation"
+EndSection
+
+Section "Screen"
+    Identifier     "Screen0"
+    Device         "Device0"
+    Monitor        "Monitor0"
+    DefaultDepth    24
+    SubSection     "Display"
+        Depth       24
+    EndSubSection
+EndSection
+```
+https://no-operand.hateblo.jp/entry/2020/01/03/_headless_%26_x11vnc%E3%82%92%E8%87%AA%E5%8B%95%E8%B5%B7%E5%8B%95%E3%81%AB%E3%81%97%E3%81%A6%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88PC%E3%81%AB%E3%81%99%E3%82%8B
