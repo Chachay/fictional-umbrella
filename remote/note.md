@@ -68,4 +68,13 @@ EGL version string: 1.5
 EGL client APIs: OpenGL_ES OpenGL
 ...
 
+chachay@EGL:~$ nvidia-xconfig --query-gpu-info
+Number of GPUs: 1
+
+GPU #0:
+  Name      : Tesla P100-PCIE-16GB
+  UUID      : GPU-32421417-3465-379a-89ce-cb10ee3c04f8
+  PCI BusID : PCI:0@1:0:0
+
+  Number of Display Devices: 0
 ```
